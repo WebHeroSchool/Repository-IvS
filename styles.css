@@ -12,7 +12,8 @@ body {
   justify-content: space-between;
 }
 
-.logo,.menu {
+.logo,
+.menu {
   display: inline-block;
   font-size: 18px;
 }
