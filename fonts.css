@@ -15,13 +15,13 @@
 @font-face {
   font-family: 'pt_serifitalic';
   src: url('fonts/PTSerifItalic.woff') format('woff');
-  font-weight:normal;
-  font-style:normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'pt_serif';
   src: url('fonts/PTSerifRegular.woff') format('woff');
-  font-weight:normal;
-  font-style:normal;
+  font-weight: normal;
+  font-style: normal;
 }
