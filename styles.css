@@ -15,16 +15,22 @@ body {
 .logo,
 .menu {
   display: inline-block;
-  font-size: 18px;
 }
 
 .menu {
+  font-family: Roboto;
   display: flex;
   align-items: center;
 }
 
 .menu__item {
+  text-decoration-line: none;
+  font-size: 18px;
   padding: 0 13px;
+}
+
+.menu__item_active {
+  text-decoration: underline;
 }
 
 .menu__item:last-child {
@@ -32,5 +38,29 @@ body {
 }
 
 .logo {
+  position: relative;
   padding: 40px 0;
+  padding-left: 44px;
+  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+}
+
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.logo__circle_color_blue {
+  opacity: .7;
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056EC;
 }
