@@ -31,7 +31,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding: 0 13px;
-  color: #000000;
+  color: black;
 }
 
 .menu__item:last-child {
