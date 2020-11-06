@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -24,12 +25,13 @@ body {
 
 .menu__item {
   text-decoration-line: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 18px;
+  line-height: 21px;
   padding: 0 13px;
-}
-
-.menu__item_active {
-  text-decoration: underline;
+  color: #000000;
 }
 
 .menu__item:last-child {
