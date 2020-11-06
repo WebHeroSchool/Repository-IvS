@@ -25,7 +25,7 @@ body {
 
 .menu__item {
   text-decoration-line: none;
-  font-family: Roboto;
+  font-family: Roboto, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
