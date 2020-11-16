@@ -206,7 +206,7 @@ body {
     top: 8px;
   }
 
-    .menu {
+  .menu {
     display: block;
     position: fixed;
     visibility: hidden;
