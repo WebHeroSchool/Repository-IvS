@@ -150,7 +150,6 @@ body {
 
 .header {
   margin-bottom: 28px;
-  padding:
 }
 
 .main {
@@ -172,7 +171,7 @@ body {
 }
 
 .main__button {
-  font: 500 14px/16px Roboto. arial, helvetica, sans-serif;
+  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
 }
 
 .menu__button {
@@ -248,5 +247,6 @@ body {
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
+}
 
 }
