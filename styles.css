@@ -133,11 +133,7 @@ body {
   color: #000;
 }
 
-#menu__toggle {
-  display: none;
-}
-
-@media (max-width: 375px) {
+@media (max-width: 800px) {
   .wrapper {
     margin: auto;
     width: 87%;
@@ -147,8 +143,13 @@ body {
     display: none;
   }
 
+  .logo__circle_color_dark-blue,
+  .logo__circle_color_blue {
+    margin-left: 10px;
+  }
+
   .header {
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 
   .main {
@@ -159,13 +160,13 @@ body {
   }
 
   .main__title {
-    margin-bottom: 32px;
+    margin-bottom: 8%;
     font: bold 30px/39px pt_serifbold, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
-    margin-bottom: 25px;
-    padding: 0 40px;
+    margin-bottom: 8%;
+    padding: 0 10%;
     font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
   }
 
@@ -173,96 +174,110 @@ body {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
   }
 
-  .menu__button {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 29px;
-    left: 315px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
+  .menu {
+    display: none;
+  }
+
+  .visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+  }
+
+  .hamburger {
+    margin: 0 auto;
+    margin-top: 70%;
+    margin-right: 20px;
+    width: 28px;
+    height: 17px;
+    position: relative;
+  }
+
+  .hamburger .bar {
+    padding: 0;
+    width: 28px;
+    height: 3px;
+    background-color: #0056ec;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
     z-index: 1;
   }
 
-  .menu__button > span,
-  .menu__button > span::before,
-  .menu__button > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: #0056ec;
-    transition-duration: 0.25s;
-  }
+  .bar1 {
+    top: 0;
+}
 
-  .menu__button > span::before {
-    content: '';
-    top: -8px;
-  }
-
-  .menu__button > span::after {
-    content: '';
+  .bar2,
+  .bar3 {
     top: 8px;
   }
 
+  .bar3 {
+    right: 0;
+  }
+
+  .bar4 {
+    top: 16px;
+  }
+
   .menu {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #eceff1;
-    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
-  }
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+  transition-duration: 0.5s;
+}
 
-  #checkbox:checked ~ .menu {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    visibility: visible;
-    width: 100%;
-    height: 700px;
-    z-index: 1;
-  }
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: Roboto, arial, helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
 
-  .menu__item {
-    display: block;
-    padding: 0 24px;
-    margin-bottom: 60px;
-    color: #000;
-    font-family: 600 20px Roboto, arial, helvetica, sans-serif;
-    text-decoration: none;
-    transition-duration: 0.25s;
-  }
-
-  .menu__item:first-child {
-    margin-top: 60px;
-  }
-
-  #menu__toggle:checked ~ .menu__button > span {
+  #checkbox1:checked + label > .hamburger > .bar1{
     transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 25px
   }
 
-  #menu__toggle:checked ~ .menu__button > span::before {
-    top: 0;
-    transform: rotate(0);
+  #checkbox1:checked + label > .hamburger > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
   }
 
-  #menu__toggle:checked ~ .menu__button > span::after {
-    top: 0;
-    transform: rotate(90deg);
+  #checkbox1:checked + label > .hamburger > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
   }
 
-  #menu__toggle:checked ~ .menu {
-    visibility: visible;
-    left: 0;
-    transition-duration: 0.75s;
+  #checkbox1:checked + label > .hamburger > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 25px;
+  }
+
+  #checkbox1:checked ~ .menu {
+  visibility: visible;
+  left: 0;
   }
 }
