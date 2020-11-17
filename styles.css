@@ -1,6 +1,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  max-width: 1920px;
 }
 
 .wrapper {
@@ -128,11 +129,16 @@ body {
 }
 
 .main__button:hover {
+  opacity: 0.5;
   background: #00ad9f;
   color: #000;
 }
 
-@media (max-width: 800px) {
+input {
+  display: none;
+}
+
+@media (max-width: 950px) {
   .wrapper {
     margin: auto;
     width: 87%;
@@ -230,19 +236,17 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    list-style: none;
     text-align: center;
-    background-color: #fff;
+    background-color: #eceff1;
     box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
     transition-duration: 0.5s;
   }
 
   .menu__item {
-    position: relative;
     display: block;
-    margin: 4% 0;
-    padding: 12px 24px;
     color: #333;
+    margin: 0 0 13% 0;
     font-family: Roboto, arial, helvetica, sans-serif;
     font-size: 30px;
     font-weight: 500;
@@ -250,27 +254,8 @@ body {
     transition-duration: 0.5s;
   }
 
-  .menu__item::after {
-    position: absolute;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 3px;
-    background: #0056ec;
-    opacity: 0;
-    transition: opacity 0.5s, width 0.5s;
-  }
-
   .menu__item:first-child {
-    margin-top: 50%;
-  }
-
-  .menu__item:hover {
-    opacity: 1;
-  }
-
-  .menu__item_active::after {
-    display: none;
+    margin-top: 50%;s
   }
 
   #checkbox1:checked + label > .hamburger > .bar1 {
