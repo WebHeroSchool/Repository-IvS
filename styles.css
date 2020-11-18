@@ -141,7 +141,7 @@ body {
   display: none;
 }
 
-/*Свойства для разрешения 1366*768px*/
+/* Свойства для разрешения 1366*768px */
 @media (max-width: 1366px) {
   .wrapper {
     margin: auto;
@@ -199,10 +199,9 @@ body {
     border-radius: 4px;
     transition: opacity 0.5s;
   }
-
 }
 
-/*Свойства для разрешения 1024*768px*/
+/* Свойства для разрешения 1024*768px */
 @media (max-width: 1024px) {
   .wrapper {
     margin: auto;
@@ -262,7 +261,7 @@ body {
   }
 }
 
-/*Свойства для разрешения 375*677px*/
+/* Свойства для разрешения 375*677px */
 @media (max-width: 375px) {
   .wrapper {
     margin: auto;
@@ -370,10 +369,12 @@ body {
   #menu__toggle:checked ~ .menu__button > span {
     transform: rotate(45deg);
   }
+
   #menu__toggle:checked ~ .menu__button > span::before {
     top: 0;
     transform: rotate(0);
   }
+  
   #menu__toggle:checked ~ .menu__button > span::after {
     top: 0;
     transform: rotate(90deg);
