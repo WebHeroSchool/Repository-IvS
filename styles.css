@@ -374,7 +374,7 @@ body {
     top: 0;
     transform: rotate(0);
   }
-  
+
   #menu__toggle:checked ~ .menu__button > span::after {
     top: 0;
     transform: rotate(90deg);
