@@ -137,6 +137,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   transition: opacity 0.5s;
+  animation: flash 1.5s 10 cubic-bezier(0.4, 0, 1, 1);
 }
 
 #menu__toggle {
@@ -144,16 +145,11 @@ body {
 }
 
 @keyframes flash {
-    to {
-      background: #fff;
-    }
+  to {
+    background: #fff;
+  }
 }
 
-.main__button {
-  background: #0056ec;
-  color: #fff;
-  animation: flash 1.5s 10 cubic-bezier(0.4, 0, 1, 1);
-}
 /* Свойства для разрешения 1366*768px */
 @media (max-width: 1366px) {
   .wrapper {
