@@ -12,7 +12,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 105px;
+  margin-bottom: 113px;
 }
 
 .logo,
@@ -28,7 +28,7 @@ body {
 .menu__item {
   position: relative;
   margin-right: 27px;
-  margin-top: 9px;
+  margin-top: 5px;
   font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -71,6 +71,10 @@ body {
   margin-right: 10px;
 }
 
+.menu__item:first-child {
+  margin-right: 24px;
+}
+
 .logo {
   position: relative;
   padding: 40px 0;
@@ -79,9 +83,10 @@ body {
 }
 
 .logo__circle {
+  margin-left: 4px;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 49%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
@@ -100,12 +105,15 @@ body {
 }
 
 .main {
-  padding: 100px 58% 150px 0;
+  margin-left: 4px;
+  padding: 90px 58% 150px 0;
   background: center right no-repeat url(img/mainImg.svg);
-  background-size: 775px 650px;
+  background-size: 776px 655px;
 }
 
 .main__title {
+  word-spacing: -4px;
+  letter-spacing: 1px;
   margin: 0 0 37px 0;
   font: 65px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
@@ -115,7 +123,7 @@ body {
 }
 
 .main__subtitle {
-  margin: 0 0 42px 0;
+  margin: 0 0 43px 0;
   padding-right: 180px;
   font: 22px/25px Roboto, arial, helvetica, sans-serif;
 }
@@ -125,27 +133,32 @@ body {
   font: 17px Roboto, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056ec;
-  padding: 20px 37px;
+  padding: 19px 34px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity 0.5s;
-}
-
-.main__button:hover {
-  opacity: 0.5;
-  background: #00ad9f;
-  color: #000;
 }
 
 #menu__toggle {
   display: none;
 }
 
+@keyframes flash {
+    to {
+      background: #fff;
+    }
+}
+
+.main__button {
+  background: #0056ec;
+  color: #fff;
+  animation: flash 1.5s 10 cubic-bezier(0.4, 0, 1, 1);
+}
 /* Свойства для разрешения 1366*768px */
 @media (max-width: 1366px) {
   .wrapper {
     margin: auto;
-    width: 68%;
+    width: 69%;
   }
 
   .menu__item {
@@ -156,7 +169,7 @@ body {
   }
 
   .menu__item:last-child {
-    margin-right: 3px;
+    margin-right: 10px;
   }
 
   .menu__item:first-child {
@@ -169,23 +182,27 @@ body {
 
   .logo {
     position: relative;
-    padding-left: 45px;
+    padding-left: 51px;
   }
 
   .main {
-    padding: 90px 58% 136px 0;
+    margin-left: 7px;
+    padding: 90px 57% 136px 0;
     background: center right no-repeat url(img/mainImg.svg);
-    background-size: 510px 440px;
+    background-size: 519px 440px;
   }
 
   .main__title {
+    word-spacing: -1px;
+    letter-spacing: 0;
     margin: 0 0 43px 0;
     font: 50px/64px pt_serifbold, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
-    margin-bottom: 35px;
+    margin: 0 0 39px 0;
     padding-right: 40px;
+    font: 22px/22px Roboto, arial, helvetica, sans-serif;
     font-size: 18px;
   }
 
@@ -194,7 +211,7 @@ body {
     font: 14px Roboto, arial, helvetica, sans-serif;
     color: #fff;
     background: #0056ec;
-    padding: 14px 20px;
+    padding: 14px 21px;
     text-decoration: none;
     border-radius: 4px;
     transition: opacity 0.5s;
@@ -233,7 +250,8 @@ body {
   }
 
   .main {
-    padding: 90px 58% 136px 0;
+    margin-left: 0;
+    padding: 90px 57% 136px 0;
     background: center right no-repeat url(img/mainImg.svg);
     background-size: 515px 439px;
   }
@@ -284,11 +302,13 @@ body {
   .main {
     text-align: center;
     padding: 80% 0 0;
-    background-size: 280px 240px;
+    background-size: 280px 238px;
     background-position: top center;
   }
 
   .main__title {
+    word-spacing: 0;
+    letter-spacing: 0;
     margin-bottom: 10%;
     font: bold 30px/39px pt_serifbold, arial, helvetica, sans-serif;
   }
