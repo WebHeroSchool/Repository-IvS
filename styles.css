@@ -159,8 +159,7 @@ body {
 
   .menu__item {
     position: relative;
-    margin-right: 27px;
-    margin-top: 6px;
+    margin-right: 6px 27px 0 0;
     font: 500 14px/17px Roboto, arial, helvetica, sans-serif;
   }
 
@@ -214,7 +213,7 @@ body {
   }
 }
 
-/* Свойства для разрешения 1024*768px */
+/* Свойства для планшетов */
 @media (max-width: 1024px) {
   .wrapper {
     margin: auto;
@@ -275,8 +274,8 @@ body {
   }
 }
 
-/* Свойства для разрешения 375*677px */
-@media (max-width: 375px) {
+/* Свойства для смартфонов*/
+@media (max-width: 875px) {
   .wrapper {
     margin: auto;
     width: 87%;
