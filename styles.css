@@ -365,6 +365,7 @@ body {
     background: right no-repeat url(img/mainImg.svg);
     background-size: 510px 400px;
   }
+
   .main__title {
     word-spacing: -1px;
     letter-spacing: 0;
@@ -380,6 +381,7 @@ body {
     background: right no-repeat url(img/mainImg.svg);
     background-size: 455px 365px;
   }
+  
   .main__title {
     word-spacing: -1px;
     letter-spacing: 0;
